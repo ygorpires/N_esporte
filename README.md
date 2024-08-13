@@ -1,8 +1,8 @@
-#Nunes Esporte
+# **Nunes Esporte**
 
 Construção de um CRUD para uma empresa Fictícia chamada Nunes Esportes, este trabalho tem como objetivo mostrar habilidades de programação. Para o desenvolvimento um aplicação web e foram utilizado a linguagem de programação **python**, o framework **flask** e o banco de dados **sqlite**.
 
-##REQUISITO
+## **REQUISITOS**
 *Python* instalado.
 
 *pip* - Gerenciado de pacotes do python
@@ -20,7 +20,7 @@ Agora é necessário clonar ou baixar a aplicação no repositório do github no
 
 Após baixar a aplicação é necessário entrar na pasta da aplicação e ativar o virtualenv para possa executar a aplicação em um ambiente isolado.
 
-##Linux
+### Linux
 *source venv/bin/activate*
 
 Próximo passo é baixar todas as dependências necessárias para rodar a aplicação, todas essas dependências ja estão configurado no arquivo **requeriments.txt**.
