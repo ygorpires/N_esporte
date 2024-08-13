@@ -1,0 +1,33 @@
+{% extends "base/_base.html" %}
+{% block container %}
+    
+        <div class = "row justify-content-md-center p-2">
+
+            <div class = "col col-lg-6 text-center fs-3 bg-light border" >
+                <span>Editar Produto</span>
+            </div>
+            
+        </div >
+        <div class = "row justify-content-md-center p-2">
+                <div class = "col col-lg-6">
+                        <form action="/edit/{{produtos.id}}" method = "post" autocomplet = "off">
+                                <div class="mb-3">
+                                    <label for="descricao-produto" class="form-label">Descrição</label>
+                                    <input type="text" id="descricao-produto" class="form-control text-secondary" name = "descricao" value = "{{produtos.descricao}}">    
+                                </div>    
+                                <div class="mb-3">
+                                    <label for="valor-produto" class="form-label">Valor</label>
+                                    <input type="number"  step = any id="valor-produto" class="form-control text-secondary" name = "preco" value = "{{produtos.preco}}">
+                                </div>
+                                <div class="mb-3" >
+                                    <button type="submit" class="btn btn-success mb-3">Editar</button>
+                                </div>
+                        </form>
+                 <a href="/">Lista de Produtos</a>   
+                </div>
+            
+        </div>
+    
+    
+   
+{% endblock container %}

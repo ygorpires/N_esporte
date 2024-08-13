@@ -1,0 +1,39 @@
+{% extends "base/_base.html" %}
+{% block container %}
+<div class="container p-4 ">
+    <div class = "row text-secondary">
+        <div class = "col-xs-12 fs-3 bg-light border text-center">
+            <span>Lista de Produtos</span>
+        </div>
+        <div class = "col-xs-12">
+            <a href="/add">Adicionar Produto</a>
+        </div>
+        <div class = "col-xs-12">
+            <table class = "table text-secondary">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th colspan = "2"></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {%for p in produtos%}
+                            <tr>
+                                <th>{{p.id}}</th>
+                                <th>{{p.descricao}}</th>
+                                <th>{{p.preco}}</th>
+                                <th class="text-center"><a class = "btn btn-success" role = "button" href="/edit/{{p.id}}">Editar</a></th>
+                                <th class="text-center"><a class = "btn btn-danger" role = "button" href="/delete/{{p.id}}">Excluir</a></th>
+                            </tr>
+                        {%endfor%}
+                    </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+</div>
+{% endblock container %}
